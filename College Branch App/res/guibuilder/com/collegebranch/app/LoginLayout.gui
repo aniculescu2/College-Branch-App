@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<component type="Form" layout="LayeredLayout" layeredLayoutPreferredWidthMM="221.95767" layeredLayoutPreferredHeightMM="220.89948"  autolayout="true" title="LoginLayout" focusable="false" scrollableY="false" name="LoginLayout">
+  <component type="Label" text="Login" styles="font:12.0mm; fgColor:0;" preferredSize="inherit 13.492063522338867mm" name="LoginLabel">
+    <layoutConstraint insets="3.9110303% 1.8518515mm auto 9.248555%" referenceComponents="-1 2 -1 -1" referencePositions="0.0 0.0 0.0 0.0" />
+  </component>
+  <component type="Button" text="Login" styles="border:roundRect stroke(0.5mm 000000) +top-left +top-right +bottom-left +bottom-right 3.0mm; bgColor:6a0c6a; fgColor:ad16; transparency:124; alignment:center; margin:3.0mm 3.0mm 3.0mm 3.0mm; padding:3.0mm 3.0mm 3.0mm 3.0mm;" disabledStyles="bgColor:715cd; fgColor:dee400; opacity:229;" preferredSize="35.449737548828125mm 13.4920635mm" enabled="false" textPosition="2" name="LoginButton" actionEvent="true">
+    <layoutConstraint insets="40.633213% 51.706825% 46.74345% 11.665941%" referenceComponents="-1 -1 -1 -1" referencePositions="0.0 0.0 0.0 0.0" />
+  </component>
+  <component type="Container" layout="TableLayout" tableLayoutRows="3" tableLayoutColumns="2" tableLayoutGrowHorizontally="false"  styles="font:12.0mm;" preferredSize="inherit 36.772488mm" name="Table_Layout">
+    <layoutConstraint insets="17.95977% 8.994709mm auto 2.9100523mm" referenceComponents="-1 -1 -1 -1" referencePositions="0.0 0.0 0.0 0.0" />
+    <component type="Label" text="Username/Email" styles="font:3.0mm native:MainLight native:MainLight; margin:inherit 3.0mm inherit inherit;" name="Username">
+      <layoutConstraint row="0" column="0" height="-1" width="10" align="-1" valign="-1" spanHorizontal="1" spanVertical="1" />
+    </component>
+    <component type="TextField" name="UsernameText" dataChangeEvent="true">
+      <layoutConstraint row="0" column="1" height="-1" width="-1" align="-1" valign="-1" spanHorizontal="1" spanVertical="1" />
+    </component>
+    <component type="Label" text="Password" styles="font:3.0mm native:MainLight native:MainLight; bgImage:null;" name="Password">
+      <layoutConstraint row="1" column="-1" height="-1" width="25" align="-1" valign="-1" spanHorizontal="1" spanVertical="1" />
+    </component>
+    <component type="TextField" styles="alignment:left;" name="PasswordText" dataChangeEvent="true">
+      <layoutConstraint row="1" column="1" height="-1" width="-1" align="-1" valign="-1" spanHorizontal="1" spanVertical="1" />
+    </component>
+    <component type="Container" layout="BoxLayout" boxLayoutAxis="X"  styles="border:1.0px solid 0; margin:3.0mm inherit inherit inherit;" preferredSize="inherit inherit" name="Box_Layout_X">
+      <layoutConstraint row="2" column="1" height="-1" width="-1" align="-1" valign="-1" spanHorizontal="1" spanVertical="1" />
+      <component type="RadioButton" text="Mentor" styles="font:3.0mm;" group="rg1" name="MentorSelect" actionEvent="true">
+      </component>
+      <component type="RadioButton" text="Mentee" styles="font:3.0mm; alignment:center;" group="rg1" name="MenteeSelect" actionEvent="true">
+      </component>
+    </component>
+  </component>
+</component>
